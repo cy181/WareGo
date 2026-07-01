@@ -1,0 +1,204 @@
+.bg-main-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -99;
+}
+
+.carousel-item img {
+  height: 90vh;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.8);
+  border-radius: 100%;
+  background-size: 50%;
+  padding: 30px;
+}
+
+.carousel.slide p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  max-width: 70%;
+  text-align: center;
+  z-index: 50;
+  color: rgb(245, 235, 235);
+  background-color: rgba(136, 108, 108, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  font-size: 1.2rem;
+  font-weight: 100;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  padding: 16px 24px;
+  font-family: "Oswald", sans-serif;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+  margin: 0;
+  transition: background-color 0.9s ease;
+}
+
+.carousel.slide p:hover {
+  background-color: rgba(136, 108, 108, 0.65);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+
+.main-headings {
+  color: black;
+  text-align: center;
+  font-size: 3rem;
+  margin: 50px 0;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.4);
+  transition: transform ease-in 1s;
+}
+
+.main-headings:hover {
+  transform: translateY(-50%);
+  transition: transform ease-out 0.5s;
+}
+
+.product-cards {
+  margin: 0 10%;
+}
+
+/*overwriting arrows sizes and locations*/
+
+.product-cards .carousel.slide .carousel-control-prev-icon,
+.product-cards .carousel.slide .carousel-control-next-icon {
+  padding: 10px;
+  height: 85%;
+  border-radius: 22px;
+}
+
+.product-cards .carousel.slide .carousel-control-prev,
+.product-cards .carousel.slide .carousel-control-next {
+  max-width: 40px;
+}
+
+/*cards*/
+
+.card {
+  box-shadow:
+    0 4px 8px 0 rgba(255, 255, 255, 0.2),
+    0 6px 20px 0 rgba(255, 255, 255, 0.19);
+  opacity: 0;
+  transform: translateY(60px);
+  transition:
+    opacity 0.8s ease-out,
+    transform 0.8s ease-out;
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+}
+
+.card-title span {
+  opacity: 0.9;
+}
+
+.card-title span:hover {
+  opacity: 1;
+  text-decoration: rgb(153, 172, 81) underline;
+}
+
+.card-gallery {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+
+.card-main {
+  height: 50%;
+  width: 100%;
+  padding: 5px;
+}
+
+.card-main img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.card-wrap {
+  height: 50%;
+  position: relative;
+}
+
+.card-wrap .carousel,
+.card-wrap .carousel-inner {
+  height: 100%;
+}
+
+.card-wrap .carousel-item {
+  height: 100%;
+  display: none;
+}
+
+.card-wrap .carousel-item.active,
+.card-wrap .carousel-item.carousel-item-next,
+.card-wrap .carousel-item.carousel-item-prev {
+  display: flex;
+}
+
+.card-wrap img:hover {
+  opacity: 0.7;
+}
+
+/*images inside cards*/
+
+.img-wrapper {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 5px;
+}
+
+.img-wrapper img {
+  width: 100%;
+  height: 100%;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.img-wrapper img:hover {
+  opacity: 0.7;
+}
+
+.img-wrapper span {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  color: white;
+  font-size: 1.2rem;
+  text-shadow: 1px 1px 3px rgb(0, 0, 0);
+}

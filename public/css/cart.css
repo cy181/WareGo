@@ -1,0 +1,137 @@
+body {
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.cart-container {
+  width: 90%;
+  max-width: 1400px;
+  margin: 50px auto;
+}
+
+.cart-title {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.cart-content {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.cart-items {
+  flex: 3;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  background-color: rgb(30, 30, 30);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.cart-item img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.item-info {
+  flex: 1;
+}
+
+.item-info h3 {
+  margin-bottom: 5px;
+}
+
+.item-info p {
+  color: silver;
+}
+
+.quantity {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.quantity button {
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.quantity button:hover {
+  cursor: pointer;
+  background-color: rgb(73, 73, 73);
+  color: white;
+}
+
+.price {
+  font-size: 1.2rem;
+  min-width: 100px;
+}
+
+.remove-btn {
+  border: none;
+  background-color: crimson;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.remove-btn:hover {
+  cursor: pointer;
+  background-color: rgb(154, 11, 40);
+}
+
+.order-summary {
+  flex: 1;
+  background-color: rgb(30, 30, 30);
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: sticky;
+  top: 120px;
+}
+
+.order-summary h2 {
+  margin-bottom: 25px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px 0;
+}
+
+.total {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.checkout-btn {
+  width: 100%;
+  margin-top: 25px;
+  padding: 15px;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(221, 245, 0, 0.9);
+  color: black;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.checkout-btn:hover {
+  cursor: pointer;
+  background-color: rgba(147, 163, 0, 0.9);
+}

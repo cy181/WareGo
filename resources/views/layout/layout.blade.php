@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+  <link rel="shortcut icon" href="{{asset('images/logo.png')}}" type="image/x-icon" />
   <link href='{{asset("bootstrap/css/bootstrap.min.css")}}' rel="stylesheet" />
   <link rel="stylesheet" href='{{asset("css/common.css")}}' />
   @yield('custom-css')
@@ -58,7 +58,7 @@
         <a href="{{route('cart')}}">CART</a>
       </ul>
       <ul>
-        <a href="#">PROFILE</a>
+        <a href="{{route('profile')}}">PROFILE</a>
       </ul>
     </div>
   </nav>

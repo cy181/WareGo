@@ -15,12 +15,12 @@
   <nav>
     <div class="left">
       <ul>
-        <a href="index.html">
+        <a href="{{route('home')}}">
           <img src="images/logo.png" alt="Logo" class="logo" />
         </a>
       </ul>
       <ul>
-        <a href="about.html">ABOUT</a>
+        <a href="{{route('about')}}">ABOUT</a>
       </ul>
     </div>
 
@@ -54,7 +54,7 @@
         </ul>
       </div>
       <ul>
-        <a href="cart.html">CART</a>
+        <a href="{{route('cart')}}">CART</a>
       </ul>
       <ul>
         <a href="#">PROFILE</a>
@@ -84,7 +84,7 @@
 
   <div class="watermark">COPYRIGHT © 2026 WAREGO</div>
 
-  <button onclick="backToTop()" id="top-btn" class="top-btn">↑</button>
+  <button onclick="backToTop()" id="top-btn" class="top-btn" title="Go to top">↑</button>
 
   <script src='{{asset("js/common.js")}}'></script>
   <script src='{{asset("bootstrap/js/bootstrap.min.js")}}'></script>

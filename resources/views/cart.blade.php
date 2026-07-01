@@ -1,4 +1,4 @@
-@extends(layout.layout)
+@extends('layout.layout')
 
 @section('custom-css')
 <link rel="stylesheet" href="css/cart.css" />

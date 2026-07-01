@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('custom-css')
-<link rel="stylesheet" href='{{asset("css/main.css")}}' />
+<link rel="stylesheet" href='{{asset("css/home.css")}}' />
 @endsection
 
 @section('page-title')
@@ -9,7 +9,7 @@
 @endsection
 
 @section('page-content')
-<div class=bg-main-page></div>
+<div class="bg-main-page"></div>
 
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">

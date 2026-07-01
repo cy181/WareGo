@@ -9,6 +9,7 @@
 @endsection
 
 @section('page-content')
+<div class=bg-main-page></div>
 
 <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">

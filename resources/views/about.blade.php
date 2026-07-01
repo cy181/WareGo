@@ -13,7 +13,7 @@
 <h1>Who are we?</h1>
     <div class="container-1">
         <div class="image-wrapper">
-            <img src="images/warehouse.avif" alt="Warehouse">
+            <img src="{{asset('images/warehouse.avif')}}" alt="Warehouse">
         </div>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minima libero sed quam animi nam! Magni repellat
             rem, <br>optio exercitationem officiis, debitis sapiente nam vitae error sint cupiditate. Minima, laborum
@@ -37,8 +37,8 @@
     </div>
 
     <div class="container-3">
-        <img src="images/warehouse.avif" alt="Warehouse">
-        <img src="images/warehouse.avif" alt="Warehouse">
+        <img src="{{asset('images/warehouse.avif')}}" alt="Warehouse">
+        <img src="{{asset('images/warehouse.avif')}}" alt="Warehouse">
     </div>
 
 @endsection

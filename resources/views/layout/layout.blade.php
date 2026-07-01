@@ -12,11 +12,12 @@
 </head>
 
 <body>
+  <!-- NAVIGATION BAR -->
   <nav>
     <div class="left">
       <ul>
         <a href="{{route('home')}}">
-          <img src="images/logo.png" alt="Logo" class="logo" />
+          <img src="{{asset('images/logo.png')}}" alt="Logo" class="logo" />
         </a>
       </ul>
       <ul>
@@ -62,8 +63,11 @@
     </div>
   </nav>
 
+  <!-- PAGE CONTENT -->
+
   @yield('page-content')
 
+<!-- FOOTER -->
 <footer>
     <div class="footer-about">
       <h3>About</h3>

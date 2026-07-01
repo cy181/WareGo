@@ -72,7 +72,7 @@
         quasi quaerat eaque commodi dolor blanditiis. Doloremque eaque
         deserunt repellat consectetur eos, doloribus saepe omnis dolore a
         magni porro ad quidem. <br />
-        <a href="about.html">Learn more about us here</a>
+        <a href="{{route('about')}}">Learn more about us here</a>
       </p>
     </div>
     <div class="footer-contact">

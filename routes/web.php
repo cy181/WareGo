@@ -7,8 +7,10 @@ Route::get('/', function () {
 });
 
 Route::view("/", 'home')->name("home");
+Route::view("/home", 'home');
 Route::view("/about", 'about')->name("about");
 Route::view("/cart", 'cart')->name("cart");
+Route::view("/profile", 'profile')->name("profile");
 
 Route::view("category/food", 'category.food')->name("food");
 Route::view("category/electronics", 'category.electronics')->name("electronics");

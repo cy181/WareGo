@@ -2,6 +2,11 @@
 
 @section('custom-css')
 <link rel="stylesheet" href='{{asset("css/home.css")}}' />
+<style>
+.bg-main-page {
+    background-image: url('{{ asset("images/background.png") }}');
+}
+</style>
 @endsection
 
 @section('page-title')

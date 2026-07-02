@@ -9,8 +9,8 @@
 @endsection
 
 @section('page-content')
-
-<h1>Who are we?</h1>
+<section>
+    <h1>Who are we?</h1>
     <div class="container-1">
         <div class="image-wrapper">
             <img src="{{asset('images/warehouse.avif')}}" alt="Warehouse">
@@ -38,5 +38,6 @@
         <img src="{{asset('images/warehouse.avif')}}" alt="Warehouse">
         <img src="{{asset('images/warehouse.avif')}}" alt="Warehouse">
     </div>
+</section>
 
 @endsection

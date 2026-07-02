@@ -3,6 +3,11 @@ body {
     color: white;
 }
 
+section p {
+    color: silver;
+    margin-top: 1rem;
+}
+
 h1 {
     font-size: 5rem;
     text-align: center;
@@ -24,12 +29,6 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-p {
-    color: silver;
-    margin-top: 1rem;
-    text-align: justify;
 }
 
 h2 {

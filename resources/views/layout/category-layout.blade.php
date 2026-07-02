@@ -7,7 +7,7 @@
   <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
   <link href='{{asset("bootstrap/css/bootstrap.min.css")}}' rel="stylesheet" />
   <link rel="stylesheet" href='{{asset("css/common.css")}}' />
-  @yield('custom-css')
+  <link rel="stylesheet" href='{{asset("css/category.css")}}' />
   @yield('page-title')
 </head>
 
@@ -44,14 +44,14 @@
           <a>CATEGORIES</a>
         </ul>
         <ul class="categories-dropdown" id="categories-dropdown">
-          <li><a href="{{route('food')}}">Food</a></li>
-          <li><a href="{{route('electronics')}}">Electronic</a></li>
-          <li><a href="{{route('literature')}}">Literature</a></li>
-          <li><a href="{{route('tool')}}">Tool</a></li>
-          <li><a href="{{route('personal-care')}}">Personal Care</a></li>
-          <li><a href="{{route('beauty-product')}}">Beauty Product</a></li>
-          <li><a href="{{route('health-product')}}">Health Product</a></li>
-          <li><a href="{{route('household')}}">Household</a></li>
+          <li><a href="#">Food</a></li>
+          <li><a href="#">Electronic</a></li>
+          <li><a href="#">Literature</a></li>
+          <li><a href="#">Tool</a></li>
+          <li><a href="#">Personal Care</a></li>
+          <li><a href="#">Beauty Product</a></li>
+          <li><a href="#">Health Product</a></li>
+          <li><a href="#">Household</a></li>
         </ul>
       </div>
       <ul>
@@ -91,6 +91,7 @@
   <button onclick="backToTop()" id="top-btn" class="top-btn" title="Go to top">↑</button>
 
   <script src='{{asset("js/common.js")}}'></script>
+  <script src='{{asset("js/category.js")}}'></script>
   <script src='{{asset("bootstrap/js/bootstrap.min.js")}}'></script>
 @yield('custom-js')
   

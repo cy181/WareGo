@@ -9,3 +9,12 @@ Route::get('/', function () {
 Route::view("/", 'home')->name("home");
 Route::view("/about", 'about')->name("about");
 Route::view("/cart", 'cart')->name("cart");
+
+Route::view("category/food", 'category.food')->name("food");
+Route::view("category/electronics", 'category.electronics')->name("electronics");
+Route::view("category/literature", 'category.literature')->name("literature");
+Route::view("category/tool", 'category.tool')->name("tool");
+Route::view("category/personal-care", 'category.personal-care')->name("personal-care");
+Route::view("category/beauty-product", 'category.beauty-product')->name("beauty-product");
+Route::view("category/health-product", 'category.health-product')->name("health-product");
+Route::view("category/household", 'category.household')->name("household");

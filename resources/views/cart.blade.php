@@ -38,7 +38,7 @@
 
           <div class="item-info">
             <h3>Warehouse Scanner</h3>
-            <p>Electronics</p>
+            <p>Electronic</p>
           </div>
 
           <div class="quantity">

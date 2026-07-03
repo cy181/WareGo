@@ -45,10 +45,10 @@
         </ul>
         <ul class="categories-dropdown" id="categories-dropdown">
           <li><a href="{{route('food')}}">Food</a></li>
-          <li><a href="{{route('electronics')}}">Electronic</a></li>
+          <li><a href="{{route('electronic')}}">Electronic</a></li>
           <li><a href="{{route('literature')}}">Literature</a></li>
           <li><a href="{{route('tool')}}">Tool</a></li>
-          <li><a href="{{route('personal-care')}}">Personal Care</a></li>
+          <li><a href="{{route('furniture')}}">Furniture</a></li>
           <li><a href="{{route('beauty-product')}}">Beauty Product</a></li>
           <li><a href="{{route('health-product')}}">Health Product</a></li>
           <li><a href="{{route('household')}}">Household</a></li>

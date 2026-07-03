@@ -1,11 +1,13 @@
 @extends('layout.category-layout')
 
-@section('page-content')
-<div class="category-wrapper">
+@section('page-title')
+<title>WareGo - Food</title>
+@endsection
 
-    <aside class="category-sidebar">
-        <h3>Categories</h3>
-        <ul>
+@section('page-content')
+@endsection
+
+@push('sidebar-items')
             <li onclick="selectCategory(0, this)"><a href="#">Meat</a></li>
             <li onclick="selectCategory(1, this)"><a href="#">Seafood</a></li>
             <li onclick="selectCategory(2, this)"><a href="#">Eggs</a></li>
@@ -33,8 +35,4 @@
             <li onclick="selectCategory(24, this)"><a href="#">Beverages</a></li>
             <li onclick="selectCategory(25, this)"><a href="#">Plant-Based</a></li>
             <li onclick="selectCategory(26, this)"><a href="#">Fermented Foods</a></li>
-        </ul>
-    </aside>
-
-</div>
-@endsection
+@endpush

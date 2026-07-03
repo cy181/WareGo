@@ -12,6 +12,7 @@
 </head>
 
 <body>
+  <div class="background"></div>
   <!-- NAVIGATION BAR -->
   <nav>
     <div class="left">
@@ -44,28 +45,41 @@
           <a>CATEGORIES</a>
         </ul>
         <ul class="categories-dropdown" id="categories-dropdown">
-          <li><a href="#">Food</a></li>
-          <li><a href="#">Electronic</a></li>
-          <li><a href="#">Literature</a></li>
-          <li><a href="#">Tool</a></li>
-          <li><a href="#">Personal Care</a></li>
-          <li><a href="#">Beauty Product</a></li>
-          <li><a href="#">Health Product</a></li>
-          <li><a href="#">Household</a></li>
+          <li><a href="{{route('food')}}">Food</a></li>
+          <li><a href="{{route('electronic')}}">Electronic</a></li>
+          <li><a href="{{route('literature')}}">Literature</a></li>
+          <li><a href="{{route('tool')}}">Tool</a></li>
+          <li><a href="{{route('furniture')}}">Furniture</a></li>
+          <li><a href="{{route('beauty-product')}}">Beauty Product</a></li>
+          <li><a href="{{route('health-product')}}">Health Product</a></li>
+          <li><a href="{{route('household')}}">Household</a></li>
         </ul>
       </div>
       <ul>
         <a href="{{route('cart')}}">CART</a>
       </ul>
       <ul>
-        <a href="#">PROFILE</a>
+        <a href="{{route('profile')}}">PROFILE</a>
       </ul>
     </div>
   </nav>
 
+  
   <!-- PAGE CONTENT -->
+  <div class="category-wrapper">
 
-  @yield('page-content')
+    <aside class="category-sidebar">
+      <h3>Categories</h3>
+      <ul>
+        @stack('sidebar-items')
+      </ul>
+    </aside>
+
+    <div class="category-content">
+      @yield('page-content')
+    </div>
+
+  </div>
 
 <!-- FOOTER -->
 <footer>

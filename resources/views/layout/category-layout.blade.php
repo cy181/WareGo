@@ -1,17 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="{{asset('images/logo.png')}}" type="image/x-icon" />
+  <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
   <link href='{{asset("bootstrap/css/bootstrap.min.css")}}' rel="stylesheet" />
   <link rel="stylesheet" href='{{asset("css/common.css")}}' />
-  @yield('custom-css')
+  <link rel="stylesheet" href='{{asset("css/category.css")}}' />
   @yield('page-title')
 </head>
 
 <body>
+  <div class="background"></div>
   <!-- NAVIGATION BAR -->
   <nav>
     <div class="left">
@@ -63,42 +64,48 @@
     </div>
   </nav>
 
+  
   <!-- PAGE CONTENT -->
+  <div class="category-wrapper">
 
-  @yield('page-content')
+    <aside class="category-sidebar">
+      <h3>Categories</h3>
+      <ul>
+        @stack('sidebar-items')
+      </ul>
+    </aside>
+
+    <div class="category-content">
+      @yield('page-content')
+    </div>
+
+  </div>
 
 <!-- FOOTER -->
 <footer>
     <div class="footer-about">
       <h3>About</h3>
       <p>
-        WareGo is dedicated to simplifying warehouse inventory management through a reliable and user-friendly platform. Our mission is to help businesses organize, track, and restock their inventory with greater efficiency, making warehouse operations smarter and more productive. <br />
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima,
+        quasi quaerat eaque commodi dolor blanditiis. Doloremque eaque
+        deserunt repellat consectetur eos, doloribus saepe omnis dolore a
+        magni porro ad quidem. <br />
         <a href="{{route('about')}}">Learn more about us here</a>
       </p>
     </div>
     <div class="footer-contact">
       <h3>Contact</h3>
-      <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-mail">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10" />
-	<path d="M3 7l9 6l9 -6" />
-  </svg>
-        warego.team@example.com</p>
-      <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-phone">
-	<path stroke="none" d="M0 0h24v24H0z" fill="none" />
-	<path d="M5 4h4l2 5l-2.5 1.5a11 11 0 0 0 5 5l1.5 -2.5l5 2v4a2 2 0 0 1 -2 2a16 16 0 0 1 -15 -15a2 2 0 0 1 2 -2" />
-  </svg>
-        +81 90-1234-5678</p>
-      <p><svg aria-hidden="true" class="valign-middle pr2" focusable="false" preserveAspectRatio="xMidYMid meet" style="width:32px;height:32px;overflow:visible;fill:currentColor" viewBox="0 0 24 24"><path d="M12,11.475 C10.5214286,11.475 9.32142857,10.299 9.32142857,8.85 C9.32142857,7.401 10.5214286,6.225 12,6.225 C13.4785714,6.225 14.6785714,7.401 14.6785714,8.85 C14.6785714,10.299 13.4785714,11.475 12,11.475 M12,1.5 C7.85357143,1.5 4.5,4.7865 4.5,8.85 C4.5,14.3625 12,22.5 12,22.5 C12,22.5 19.5,14.3625 19.5,8.85 C19.5,4.7865 16.1464286,1.5 12,1.5"></path></svg>
-      Tokyo, Japan</p>
+      <p>email@example.com</p>
+      <p>@groupname</p>
     </div>
-</footer>
+  </footer>
 
-  <div class="watermark">COPYRIGHT © 2026 WareGo. All rights reserved.</div>
+  <div class="watermark">COPYRIGHT © 2026 WAREGO</div>
 
   <button onclick="backToTop()" id="top-btn" class="top-btn" title="Go to top">↑</button>
 
   <script src='{{asset("js/common.js")}}'></script>
+  <script src='{{asset("js/category.js")}}'></script>
   <script src='{{asset("bootstrap/js/bootstrap.min.js")}}'></script>
 @yield('custom-js')
   

@@ -9,10 +9,10 @@
 
     <div class="item-row">
         <div class="item">
-            <img src="{{ asset('images/meat/chicken-leg.png') }}" alt="Chicken Leg" />
+            <img src="{{ asset('images/meat/chicken.jpg') }}" alt="Chicken Leg" />
             <div class="item-info">
-                <h4>Chicken Leg</h4>
-                <p>Fresh chicken leg, great for grilling or roasting.</p>
+                <h4>Chicken</h4>
+                <p>Fresh chicken, great for grilling or roasting.</p>
                 <div class="counter">
                     <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
                     <span>0</span>

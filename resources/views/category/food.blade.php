@@ -12,11 +12,11 @@
             <img src="{{ asset('images/meat/chicken.jpg') }}" alt="Chicken Leg" />
             <div class="item-info">
                 <h4>Chicken</h4>
-                <p>Fresh chicken, great for grilling or roasting.</p>
+                <p>Price per unit : </p>
                 <div class="counter">
-                    <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
-                    <span>0</span>
-                    <button class="counter-btn" onclick="changeCount(this, 1)">►</button>
+                    <button class="counter-btn" onclick="decrement()">◄</button>
+                    <span id="count">0</span>
+                    <button class="counter-btn" onclick="increment()">►</button>
                 </div>
             </div>
         </div>
@@ -24,11 +24,11 @@
             <img src="{{ asset('images/meat/chicken-thigh.png') }}" alt="Chicken Thigh" />
             <div class="item-info">
                 <h4>Chicken Thigh</h4>
-                <p>Juicy chicken thigh, perfect for stews and frying.</p>
-                <div class="counter">
-                    <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
+                <p>Price per unit : </p>
+                <div class="counter">              
+                    <button class="counter-btn" onclick="decrement()">◄</button>
                     <span>0</span>
-                    <button class="counter-btn" onclick="changeCount(this, 1)">►</button>
+                    <button class="counter-btn" onclick="increment()">►</button>
                 </div>
             </div>
         </div>
@@ -39,7 +39,7 @@
             <img src="{{ asset('images/meat/beef.png') }}" alt="Beef" />
             <div class="item-info">
                 <h4>Beef</h4>
-                <p>Premium cut beef, ideal for steaks and burgers.</p>
+                <p>Price per unit : </p>
                 <div class="counter">
                     <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
                     <span>0</span>
@@ -51,7 +51,7 @@
             <img src="{{ asset('images/meat/pork.png') }}" alt="Pork" />
             <div class="item-info">
                 <h4>Pork</h4>
-                <p>Fresh pork cuts, suitable for BBQ and stir fry.</p>
+                <p>Price per unit : </p>
                 <div class="counter">
                     <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
                     <span>0</span>
@@ -66,7 +66,7 @@
             <img src="{{ asset('images/meat/lamb.png') }}" alt="Lamb" />
             <div class="item-info">
                 <h4>Lamb</h4>
-                <p>Tender lamb cuts, great for slow cooking.</p>
+                <p>Price per unit : </p>
                 <div class="counter">
                     <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
                     <span>0</span>
@@ -78,7 +78,7 @@
             <img src="{{ asset('images/meat/mutton.png') }}" alt="Mutton" />
             <div class="item-info">
                 <h4>Mutton</h4>
-                <p>Rich flavored mutton, perfect for curries.</p>
+                <p>Price per unit : </p>
                 <div class="counter">
                     <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
                     <span>0</span>
@@ -93,7 +93,7 @@
             <img src="{{ asset('images/meat/duck.png') }}" alt="Duck" />
             <div class="item-info">
                 <h4>Duck</h4>
-                <p>Whole duck, ideal for roasting and Asian dishes.</p>
+                <p>Price per unit : </p>
                 <div class="counter">
                     <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
                     <span>0</span>
@@ -105,7 +105,7 @@
             <img src="{{ asset('images/meat/turkey.png') }}" alt="Turkey" />
             <div class="item-info">
                 <h4>Turkey</h4>
-                <p>Whole turkey, perfect for festive occasions.</p>
+                <p>Price per unit : </p>
                 <div class="counter">
                     <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
                     <span>0</span>
@@ -120,7 +120,7 @@
             <img src="{{ asset('images/meat/veal.png') }}" alt="Veal" />
             <div class="item-info">
                 <h4>Veal</h4>
-                <p>Tender veal cuts, great for Italian dishes.</p>
+                <p>Price per unit : </p>
                 <div class="counter">
                     <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
                     <span>0</span>
@@ -132,7 +132,7 @@
             <img src="{{ asset('images/meat/rabbit.png') }}" alt="Rabbit" />
             <div class="item-info">
                 <h4>Rabbit</h4>
-                <p>Lean rabbit meat, ideal for stews and roasting.</p>
+                <p>Price per unit : </p>
                 <div class="counter">
                     <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
                     <span>0</span>

@@ -14,9 +14,9 @@
                 <h4>Chicken</h4>
                 <p>Price per unit : </p>
                 <div class="counter">
-                    <button class="counter-btn" onclick="decrement()">◄</button>
-                    <span id="count">0</span>
-                    <button class="counter-btn" onclick="increment()">►</button>
+                    <button class="counter-btn" onclick="decrement(this)">◄</button>
+                    <span>0</span>
+                    <button class="counter-btn" onclick="increment(this)">►</button>
                 </div>
             </div>
         </div>
@@ -26,9 +26,9 @@
                 <h4>Chicken Thigh</h4>
                 <p>Price per unit : </p>
                 <div class="counter">              
-                    <button class="counter-btn" onclick="decrement()">◄</button>
+                    <button class="counter-btn" onclick="decrement(this)">◄</button>
                     <span>0</span>
-                    <button class="counter-btn" onclick="increment()">►</button>
+                    <button class="counter-btn" onclick="increment(this)">►</button>
                 </div>
             </div>
         </div>
@@ -41,9 +41,9 @@
                 <h4>Beef</h4>
                 <p>Price per unit : </p>
                 <div class="counter">
-                    <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
+                    <button class="counter-btn" onclick="decrement(this)">◄</button>
                     <span>0</span>
-                    <button class="counter-btn" onclick="changeCount(this, 1)">►</button>
+                    <button class="counter-btn" onclick="increment(this)">►</button>
                 </div>
             </div>
         </div>
@@ -53,9 +53,9 @@
                 <h4>Pork</h4>
                 <p>Price per unit : </p>
                 <div class="counter">
-                    <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
+                    <button class="counter-btn" onclick="decrement(this)">◄</button>
                     <span>0</span>
-                    <button class="counter-btn" onclick="changeCount(this, 1)">►</button>
+                    <button class="counter-btn" onclick="increment(this)">►</button>
                 </div>
             </div>
         </div>
@@ -68,9 +68,9 @@
                 <h4>Lamb</h4>
                 <p>Price per unit : </p>
                 <div class="counter">
-                    <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
+                    <button class="counter-btn" onclick="decrement(this)">◄</button>
                     <span>0</span>
-                    <button class="counter-btn" onclick="changeCount(this, 1)">►</button>
+                    <button class="counter-btn" onclick="increment(this)">►</button>
                 </div>
             </div>
         </div>
@@ -80,9 +80,9 @@
                 <h4>Mutton</h4>
                 <p>Price per unit : </p>
                 <div class="counter">
-                    <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
+                    <button class="counter-btn" onclick="decrement(this)">◄</button>
                     <span>0</span>
-                    <button class="counter-btn" onclick="changeCount(this, 1)">►</button>
+                    <button class="counter-btn" onclick="increment(this)">►</button>
                 </div>
             </div>
         </div>
@@ -95,9 +95,9 @@
                 <h4>Duck</h4>
                 <p>Price per unit : </p>
                 <div class="counter">
-                    <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
+                    <button class="counter-btn" onclick="decrement(this)">◄</button>
                     <span>0</span>
-                    <button class="counter-btn" onclick="changeCount(this, 1)">►</button>
+                    <button class="counter-btn" onclick="increment(this)">►</button>
                 </div>
             </div>
         </div>
@@ -107,9 +107,9 @@
                 <h4>Turkey</h4>
                 <p>Price per unit : </p>
                 <div class="counter">
-                    <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
+                    <button class="counter-btn" onclick="decrement(this)">◄</button>
                     <span>0</span>
-                    <button class="counter-btn" onclick="changeCount(this, 1)">►</button>
+                    <button class="counter-btn" onclick="increment(this)">►</button>
                 </div>
             </div>
         </div>
@@ -122,9 +122,9 @@
                 <h4>Veal</h4>
                 <p>Price per unit : </p>
                 <div class="counter">
-                    <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
+                    <button class="counter-btn" onclick="decrement(this)">◄</button>
                     <span>0</span>
-                    <button class="counter-btn" onclick="changeCount(this, 1)">►</button>
+                    <button class="counter-btn" onclick="increment(this)">►</button>
                 </div>
             </div>
         </div>
@@ -134,9 +134,9 @@
                 <h4>Rabbit</h4>
                 <p>Price per unit : </p>
                 <div class="counter">
-                    <button class="counter-btn" onclick="changeCount(this, -1)">◄</button>
+                    <button class="counter-btn" onclick="decrement(this)">◄</button>
                     <span>0</span>
-                    <button class="counter-btn" onclick="changeCount(this, 1)">►</button>
+                    <button class="counter-btn" onclick="increment(this)">►</button>
                 </div>
             </div>
         </div>

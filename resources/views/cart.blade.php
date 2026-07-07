@@ -23,9 +23,9 @@
           </div>
 
           <div class="quantity">
-            <button onclick="changeCount(this, -1)">-</button>
+            <button onclick="decrement(this)">-</button>
             <span>0</span>
-            <button onclick="changeCount(this, 1)">+</button>
+            <button onclick="increment(this)">+</button>
           </div>
 
           <div class="price">$50.00</div>
@@ -42,9 +42,9 @@
           </div>
 
           <div class="quantity">
-            <button onclick="changeCount(this, -1)">-</button>
+            <button onclick="decrement(this)">-</button>
             <span>0</span>
-            <button onclick="changeCount(this, 1)">+</button>
+            <button onclick="increment(this)">+</button>
           </div>
 
           <div class="price">$300.00</div>

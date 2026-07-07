@@ -34,50 +34,35 @@ function backToTop() {
     document.documentElement.scrollTop = 0;
 }
 
-/*Modal */
-function openModal(id) {
-    document.getElementById(id).classList.add("open");
-}
-
-function closeModal(id) {
-    document.getElementById(id).classList.remove("open");
-}
-
 ///// Counter for increment/decrement ////
-let count = 0;
-let infoElement = document.getElementById("info");
-let countElement = document.getElementById("count");
 
-function updateCount() {
+function increment(button) {
+    let countElement = button.parentElement.querySelector("span");
+    let count = parseInt(countElement.innerText);
+    count++;
     countElement.innerText = count;
 }
-function increment() {
-    updateCount();
-    count++;
-}
-function decrement() {
+
+function decrement(button) {
+    let countElement = button.parentElement.querySelector("span");
+    let count = parseInt(countElement.innerText);
     if (count > 0) {
         count--;
-        updateCount();
+        countElement.innerText = count;
     }
-}
-function incrementx5() {
-    count += 5;
-    updateCount();
-}
-function decrementx5() {
-    count -= 5;
-    if (count < 0) count = 0;
-    updateCount();
 }
 
-let saveCounter = 0;
-function save() {
-    if (saveCounter == 0) {
-        infoElement.innerText += "" + count;
-        saveCounter++;
-    } else {
-        count = 0;
-        updateCount();
-    }
+function incrementx5(button) {
+    let countElement = button.parentElement.querySelector("span");
+    let count = parseInt(countElement.innerText);
+    count += 5;
+    countElement.innerText = count;
+}
+
+function decrementx5(button) {
+    let countElement = button.parentElement.querySelector("span");
+    let count = parseInt(countElement.innerText);
+    count -= 5;
+    if (count < 0) count = 0;
+    countElement.innerText = count;
 }

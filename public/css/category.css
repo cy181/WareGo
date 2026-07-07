@@ -94,17 +94,6 @@ footer {
     gap: 16px;
 }
 
-.item-row {
-    display: flex;
-    gap: 10px;
-}
-
-@media (max-width: 600px) {
-    .item-row {
-        flex-direction: column;
-    }
-}
-
 .item {
     flex: 1;
     display: flex;

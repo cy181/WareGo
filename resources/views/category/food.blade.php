@@ -8,7 +8,6 @@
 <div class="item-grid">
 
     @foreach ($items as $item)
-    <div class="item-row">
         <div class="item">
             <img src="{{ asset($item->image_path) }}" alt="{{ $item->name }}" />
             <div class="item-info">
@@ -26,7 +25,6 @@
                 </div>
             </div>
         </div>
-    </div>
     @endforeach
 
 </div>

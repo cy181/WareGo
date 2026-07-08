@@ -5,29 +5,27 @@
 @endsection
 
 @section('page-content')
-<div class="item-grid">
 
-    @foreach ($items as $item)
-        <div class="item">
-            <img src="{{ asset($item->image_path) }}" alt="{{ $item->name }}" />
-            <div class="item-info">
-                <h4>{{ $item->name }}</h4>
-                <p style="position: flex">Price per unit : 
-                    <span style="color:rgb(252, 5, 5)">{{ $item->price }} $</span>
-                </p>
+@foreach ($items as $item)
+    <div class="item">
+        <img src="{{ asset($item->image_path) }}" alt="{{ $item->name }}" />
+        <div class="item-info">
+            <h4>{{ $item->name }}</h4>
+            <p style="position: flex">Price per unit : 
+                <span style="color:rgb(252, 5, 5)">{{ $item->price }} $</span>
+            </p>
 
-                <div class="counter">
-                    <button class="counter-btn" onclick="decrementx5(this)">◄◄</button>
-                    <button class="counter-btn" onclick="decrement(this)">◄</button>
-                    <span>0</span>
-                    <button class="counter-btn" onclick="increment(this)">►</button>
-                    <button class="counter-btn" onclick="incrementx5(this)">►►</button>
-                </div>
+            <div class="counter">
+                <button class="counter-btn" onclick="decrementx5(this)">◄◄</button>
+                <button class="counter-btn" onclick="decrement(this)">◄</button>
+                <span>0</span>
+                <button class="counter-btn" onclick="increment(this)">►</button>
+                <button class="counter-btn" onclick="incrementx5(this)">►►</button>
             </div>
         </div>
-    @endforeach
+    </div>
+@endforeach
 
-</div>
 @endsection
 
 @push('sidebar-items')

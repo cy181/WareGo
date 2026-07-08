@@ -10,15 +10,6 @@ This project was developed to practice full-stack web development using Laravel 
 
 ## Setup Guide
 
-### Clone the repository
-
-```bash
-git clone https://github.com/cy181/WareGo.git
-cd WareGo
-```
-
-## Installation
-
 ### Prerequisites
 
 Before running the project, make sure you have the following installed:

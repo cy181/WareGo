@@ -1,7 +1,7 @@
 @extends('layout.layout')
 
 @section('custom-css')
-    <link rel="stylesheet" href="css/cart.css" />
+    <link rel="stylesheet" href="{{ asset('css/cart.css') }}">
 @endsection
 
 @section('page-title')
@@ -9,56 +9,78 @@
 @endsection
 
 @section('page-content')
-    <main class="cart-container">
-        <h1 class="cart-title">Your Cart</h1>
+    <div class="cart-page">
 
-        <div class="cart-content">
+        <h1 class="cart-heading">Shopping Cart</h1>
+
+        <div class="cart-wrapper">
+
+            <!-- Cart Items -->
             <div class="cart-items">
-                <div class="cart-item">
-                    <img src="images/product-placeholder.jpg" alt="Product" />
 
-                    <div class="item-info">
-                        <h3>Meat</h3>
-                        <p>Food</p>
+                @forelse ($cartItems as $item)
+                    <div class="cart-item">
+
+                        <img src="{{ asset($item->image_path) }}" alt="{{ $item->name }}">
+
+                        <div class="item-details">
+
+                            <h3>{{ $item->name }}</h3>
+
+                            <p>Category: {{ $item->name }}</p>
+
+                            <p>
+                                Quantity:
+                                <strong>{{ $item->quantity }} Units</strong>
+                            </p>
+
+                            <p>
+                                Price per Unit:
+                                <span class="price">
+                                    ${{ number_format($item->price, 2) }}
+                                </span>
+                            </p>
+
+                        </div>
+
+                        <div class="item-total">
+
+                            <p>Total</p>
+
+                            <h4>
+                                ${{ number_format($item->price * $item->quantity, 2) }}
+                            </h4>
+
+                        </div>
+
                     </div>
 
-                    <div class="quantity">
-                        <button onclick="decrement(this)">-</button>
-                        <span>0</span>
-                        <button onclick="increment(this)">+</button>
+                @empty
+
+                    <div class="empty-cart">
+
+                        <h3>Your cart is empty.</h3>
+
+                        <p>Add products to begin placing an order.</p>
+
                     </div>
+                @endforelse
 
-                    <div class="price">$50.00</div>
-
-                    <button class="remove-btn">Remove</button>
-                </div>
-
-                <div class="cart-item">
-                    <img src="images/product-placeholder.jpg" alt="Product" />
-
-                    <div class="item-info">
-                        <h3>Warehouse Scanner</h3>
-                        <p>Electronic</p>
-                    </div>
-
-                    <div class="quantity">
-                        <button onclick="changeCount(this, -1)">-</button>
-                        <span>0</span>
-                        <button onclick="changeCount(this, 1)">+</button>
-                    </div>
-
-                    <div class="price">$300.00</div>
-
-                    <button class="remove-btn">Remove</button>
-                </div>
             </div>
 
-            <div class="order-summary">
+            <!-- Order Summary -->
+            <div class="cart-summary">
+
                 <h2>Order Summary</h2>
 
                 <div class="summary-row">
+                    <span>Total Products</span>
+                    <span>2</span>
+                </div>
+
+                <div class="summary-row">
                     <span>Subtotal</span>
-                    <span>$350.00</span>
+                    <span>$880.00</span>
                 </div>
 
                 <div class="summary-row">
@@ -67,68 +89,28 @@
                 </div>
 
                 <div class="summary-row">
-                    <span>Tax</span>
-                    <span>$35.00</span>
+                    <span>Tax (10%)</span>
+                    <span>$88.00</span>
                 </div>
 
-                <hr />
+                <hr>
 
                 <div class="summary-row total">
                     <span>Total</span>
-                    <span>$405.00</span>
+                    <span>$988.00</span>
                 </div>
 
-                <button class="checkout-btn">Proceed to Checkout</button>
+                <button class="checkout-btn" onclick="checkout()">
+                    Checkout
+                </button>
+
             </div>
+
         </div>
 
-        <div class="cart-item">
-            <img src="images/product-placeholder.jpg" alt="Product" />
+    </div>
+@endsection
 
-            <div class="item-info">
-                <h3>Warehouse Scanner</h3>
-                <p>Electronic</p>
-            </div>
-
-            <div class="quantity">
-                <button onclick="decrement(this)">-</button>
-                <span>0</span>
-                <button onclick="increment(this)">+</button>
-            </div>
-
-            <div class="price">$300.00</div>
-
-            <button class="remove-btn">Remove</button>
-        </div>
-        </div>
-
-        <div class="order-summary">
-            <h2>Order Summary</h2>
-
-            <div class="summary-row">
-                <span>Subtotal</span>
-                <span>$350.00</span>
-            </div>
-
-            <div class="summary-row">
-                <span>Shipping</span>
-                <span>$20.00</span>
-            </div>
-
-            <div class="summary-row">
-                <span>Tax</span>
-                <span>$35.00</span>
-            </div>
-
-            <hr />
-
-            <div class="summary-row total">
-                <span>Total</span>
-                <span>$405.00</span>
-            </div>
-
-            <button class="checkout-btn">Proceed to Checkout</button>
-        </div>
-        </div>
-    </main>
+@section('custom-js')
+    <script src="{{ asset('js/cart.js') }}"></script>
 @endsection

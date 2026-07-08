@@ -17,6 +17,8 @@ Route::get('/about-us', [AboutController::class, 'about'])->name('about');
 
 Route::get('/search', [CategoryController::class, 'search'])->name('search');
 
+Route::get('/cart', [CartController::class, 'cart'])->name('cart');
+
 Route::get('/category/food', [CategoryController::class, 'index'])->name('food');
 Route::get('/category/electronic', [CategoryController::class, 'electronic'])->name('electronic');
 Route::get('/category/literature', [CategoryController::class, 'literature'])->name('literature');

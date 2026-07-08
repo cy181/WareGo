@@ -57,7 +57,7 @@
                 </ul>
             </div>
             <ul>
-                <a href="">CART</a>
+                <a href="{{ route('cart') }}">CART</a>
             </ul>
         </div>
     </nav>

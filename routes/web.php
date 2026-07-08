@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AboutController;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
@@ -25,3 +26,5 @@ Route::get('/category/furniture', [CategoryController::class, 'furniture'])->nam
 Route::get('/category/beauty-product', [CategoryController::class, 'beautyProduct'])->name('beauty-product');
 Route::get('/category/health-product', [CategoryController::class, 'healthProduct'])->name('health-product');
 Route::get('/category/household', [CategoryController::class, 'household'])->name('household');
+
+Route::get('/search', [SearchController::class, 'search'])->name('search');

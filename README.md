@@ -1,12 +1,12 @@
 ## WareGo
 
-A modern warehouse inventory and management system built with Laravel, designed to streamline inventory tracking, product management, and order processing through an intuitive web interface.
+A modern B2B e-commerce web app built with Laravel, PHP, Blade, MySQL
 
 ## Overview
 
-WareGo is a full-stack web application that simplifies warehouse operations by allowing users to manage products, categories, inventory, and customer orders from a centralized dashboard.
+WareGo is a full-stack web application for supermarket inventory restocking.
 
-This project was developed to practice full-stack web development using Laravel while applying software engineering principles such as MVC architecture, database design, authentication, and responsive UI development.
+This project was developed to practice full-stack web development using Laravel while applying software engineering principles such as MVC architecture, database design, and responsive UI development.
 
 ## Installation
 

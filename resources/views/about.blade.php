@@ -13,7 +13,7 @@
         <h1>Who are we?</h1>
         <div class="container-1">
             <div class="image-wrapper">
-                <img src="{{ asset('images/warehouse.avif') }}" alt="Warehouse">
+                <img src="{{ asset('images/about-page/warehouse.avif') }}" alt="Warehouse">
             </div>
             <p>WareGo is a modern warehouse inventory and restocking platform designed to help businesses manage their stock
                 with confidence and efficiency. We understand that maintaining the right inventory is essential to every
@@ -50,8 +50,8 @@
         </div>
 
         <div class="container-3">
-            <img src="{{ asset('images/warehouse.avif') }}" alt="Warehouse">
-            <img src="{{ asset('images/warehouse.avif') }}" alt="Warehouse">
+            <img src="{{ asset('images/about-page/supermarket_aisle.avif') }}" alt="Supermarket Aisle">
+            <img src="{{ asset('images/about-page/accounting.avif') }}" alt="Warehouse">
         </div>
     </section>
 @endsection

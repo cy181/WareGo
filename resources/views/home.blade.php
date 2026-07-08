@@ -53,7 +53,7 @@
     <div class="product-cards">
         <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <div class="card" onclick="window.location.href = 'meat.html'" style="cursor: pointer">
+                <div class="card">
                     <div class="card-gallery" data-bs-ride="carousel">
                         <div class="card-main">
                             <img src="{{ asset('images/meat/Meat.png') }}" alt="Meat" />
@@ -107,7 +107,7 @@
             </div>
 
             <div class="col">
-                <div class="card" onclick="window.location.href = 'dairy.html'" style="cursor: pointer">
+                <div class="card">
                     <div class="card-gallery" data-bs-ride="carousel">
                         <div class="card-main">
                             <img src="{{ asset('images/dairy/dairy.png') }}" alt="Dairy" />
@@ -160,7 +160,7 @@
             </div>
 
             <div class="col">
-                <div class="card" onclick="window.location.href = 'vegetable.html'" style="cursor: pointer">
+                <div class="card">
                     <div class="card-gallery" data-bs-ride="carousel">
                         <div class="card-main">
                             <img src="{{ asset('images/veges/vegetable.png') }}" alt="Meat" />
@@ -216,7 +216,7 @@
             </div>
 
             <div class="col">
-                <div class="card" onclick="window.location.href = 'fruit.html'" style="cursor: pointer">
+                <div class="card">
                     <div class="card-gallery" data-bs-ride="carousel">
                         <div class="card-main">
                             <img src="{{ asset('images/fruit/fruit.jpg') }}" alt="Fruit" />

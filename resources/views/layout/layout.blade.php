@@ -56,10 +56,7 @@
                 </ul>
             </div>
             <ul>
-                <a href="{{ route('cart') }}">CART</a>
-            </ul>
-            <ul>
-                <a href="{{ route('profile') }}">PROFILE</a>
+                <a href="">CART</a>
             </ul>
         </div>
     </nav>

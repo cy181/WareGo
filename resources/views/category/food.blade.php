@@ -1,11 +1,11 @@
 @extends('layout.category-layout')
 
 @section('page-title')
-<title>WareGo - Food</title>
+    <title>WareGo - Food</title>
 @endsection
 
 @section('page-content')
-<div class="item-grid">
+    <div class="item-grid">
 
     @foreach ($items as $item)
         <div class="item">
@@ -35,7 +35,7 @@
         </div>
     @endforeach
 
-</div>
+    </div>
 @endsection
 
 @push('sidebar-items')

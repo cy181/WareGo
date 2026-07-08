@@ -16,6 +16,17 @@ class CategoryController extends Controller
         return view('category.food', compact('items'));
     }
 
+    public function search(Request $request) {
+        $search = $request->search;
+
+        $query = Category::select('name', 'image_path', 'price');
+        $query->where('name', 'LIKE', $search);
+
+        $items = $query->get();
+
+        return view('category.food', compact('items'));
+    }
+
     public function electronic()
     {
         $items = Category::all()->where('category', 'electronic');

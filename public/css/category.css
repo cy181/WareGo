@@ -86,13 +86,7 @@ footer {
     margin-top: 0rem;
 }
 
-/*  item-display-right   */
-
-.item-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
+/*  item-display   */
 
 .item {
     display: flex;
@@ -104,6 +98,7 @@ footer {
     padding-right: 10px;
     padding-top: 16px;
     padding-bottom: 16px;
+    margin-top: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     transition: all 0.7s ease;
 }
@@ -140,7 +135,7 @@ footer {
 }
 
 .counter {
-    width: 120px;
+    width: 140px;
 }
 
 .counter span {

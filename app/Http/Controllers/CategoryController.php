@@ -9,11 +9,10 @@ use App\Models\User;
 
 class CategoryController extends Controller
 {
-    public function index()
-    {
-        $items = Category::select('name', 'image_path', 'price')->get();
-                
-        return view('category.food', compact('items'));
+    public function show($category) {
+        $items = Category::where('category', $category)->get();
+
+        return view('category', compact('items', 'category'));
     }
 
     public function search(Request $request) {
@@ -24,6 +23,6 @@ class CategoryController extends Controller
 
         $items = $query->get();
 
-        return view('category.food', compact('items'));
+        return view('category', compact('items'));
     }
 }

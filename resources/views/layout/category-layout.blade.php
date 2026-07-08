@@ -46,14 +46,14 @@
                     <a>CATEGORIES</a>
                 </ul>
                 <ul class="categories-dropdown" id="categories-dropdown">
-                    <li><a href="{{ route('food') }}">Food</a></li>
-                    <li><a href="{{ route('electronic') }}">Electronic</a></li>
-                    <li><a href="{{ route('literature') }}">Literature</a></li>
-                    <li><a href="{{ route('tool') }}">Tool</a></li>
-                    <li><a href="{{ route('furniture') }}">Furniture</a></li>
-                    <li><a href="{{ route('beauty-product') }}">Beauty Product</a></li>
-                    <li><a href="{{ route('health-product') }}">Health Product</a></li>
-                    <li><a href="{{ route('household') }}">Household</a></li>
+                    <li><a href="{{ route('category.show', 'food') }}">Food</a></li>
+                    <li><a href="{{ route('category.show', 'electronic') }}">Electronic</a></li>
+                    <li><a href="{{ route('category.show', 'literature') }}">Literature</a></li>
+                    <li><a href="{{ route('category.show', 'tool') }}">Tool</a></li>
+                    <li><a href="{{ route('category.show', 'furniture') }}">Furniture</a></li>
+                    <li><a href="{{ route('category.show', 'beauty-product') }}">Beauty Product</a></li>
+                    <li><a href="{{ route('category.show', 'health-product') }}">Health Product</a></li>
+                    <li><a href="{{ route('category.show', 'household') }}">Household</a></li>
                 </ul>
             </div>
             <ul>
@@ -69,7 +69,14 @@
         <aside class="category-sidebar">
             <h3>Categories</h3>
             <ul>
-                @stack('sidebar-items')
+                <li><a href="{{ route('category.show', 'food') }}">Food</a></li>
+                <li><a href="{{ route('category.show', 'electronic') }}">Electronic</a></li>
+                <li><a href="{{ route('category.show', 'literature') }}">Literature</a></li>
+                <li><a href="{{ route('category.show', 'tool') }}">Tool</a></li>
+                <li><a href="{{ route('category.show', 'furniture') }}">Furniture</a></li>
+                <li><a href="{{ route('category.show', 'beauty-product') }}">Beauty Product</a></li>
+                <li><a href="{{ route('category.show', 'health-product') }}">Health Product</a></li>
+                <li><a href="{{ route('category.show', 'household') }}">Household</a></li>
             </ul>
         </aside>
 

@@ -8,7 +8,7 @@ WareGo is a full-stack web application for supermarket inventory restocking.
 
 This project was developed to practice full-stack web development using Laravel while applying software engineering principles such as MVC architecture, database design, and responsive UI development.
 
-## Installation
+## Setup Guide
 
 ### Clone the repository
 

@@ -327,5 +327,5 @@
 @endsection
 
 @section('custom-js')
-    <script src='{{ asset('js/main.js') }}'></script>
+    <script src="{{ asset('js/main.js') }}"></script>
 @endsection

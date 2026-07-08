@@ -23,6 +23,7 @@
                     <button class="counter-btn" onclick="increment(this)">►</button>
                     <button class="counter-btn" onclick="incrementx5(this)">►►</button>
                 </div>
+
             </div>
         </div>
     @endforeach
@@ -31,13 +32,12 @@
 @endsection
 
 @push('sidebar-items')
-    <li onclick="selectCategory(0, this)"><a href="#">Meat</a></li>
-    <li onclick="selectCategory(1, this)"><a href="#">Dairy</a></li>
-    <li onclick="selectCategory(2, this)"><a href="#">Vegetables</a></li>
-    <li onclick="selectCategory(3, this)"><a href="#">Fruits</a></li>
-    <li onclick="selectCategory(4, this)"><a href="#">Bread & Bakery</a></li>
-    <li onclick="selectCategory(5, this)"><a href="#">Snacks</a></li>
-    <li onclick="selectCategory(6, this)"><a href="#">Frozen Foods</a></li>
-    <li onclick="selectCategory(7, this)"><a href="#">Desserts</a></li>
-    <li onclick="selectCategory(8, this)"><a href="#">Beverages</a></li>
+    <li onclick="selectCategory(0, this)"><a href="{{route('food')}}">Food</a></li>
+    <li onclick="selectCategory(1, this)"><a href="{{route('electronic')}}">Electronic</a></li>
+    <li onclick="selectCategory(2, this)"><a href="{{route('literature')}}">Literature</a></li>
+    <li onclick="selectCategory(3, this)"><a href="{{route('tool')}}">Tool</a></li>
+    <li onclick="selectCategory(4, this)"><a href="{{route('furniture')}}">Furniture</a></li>
+    <li onclick="selectCategory(5, this)"><a href="{{route('beauty-product')}}">Beauty Product</a></li>
+    <li onclick="selectCategory(6, this)"><a href="{{route('health-product')}}">Health Product</a></li>
+    <li onclick="selectCategory(7, this)"><a href="{{route('household')}}">Household</a></li>
 @endpush

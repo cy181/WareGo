@@ -5,36 +5,37 @@
 @endsection
 
 @section('page-content')
+<div class="item-grid">
+
+    @foreach ($items as $item)
+        <div class="item">
+            <img src="{{ asset($item->image_path) }}" alt="{{ $item->name }}" />
+            <div class="item-info">
+                <h4>{{ $item->name }}</h4>
+                <p style="position: flex">Price per unit : 
+                    <span style="color:rgb(252, 5, 5)">{{ $item->price }} $</span>
+                </p>
+
+                <div class="counter">
+                    <button class="counter-btn" onclick="decrementx5(this)">◄◄</button>
+                    <button class="counter-btn" onclick="decrement(this)">◄</button>
+                    <span>0</span>
+                    <button class="counter-btn" onclick="increment(this)">►</button>
+                    <button class="counter-btn" onclick="incrementx5(this)">►►</button>
+                </div>
+            </div>
+        </div>
+    @endforeach
+</div>
 @endsection
 
 @push('sidebar-items')
-
-<li onclick="selectCategory(0, this)"><a href="#">Fiction</a></li>
-<li onclick="selectCategory(1, this)"><a href="#">Non-Fiction</a></li>
-<li onclick="selectCategory(2, this)"><a href="#">Mystery</a></li>
-<li onclick="selectCategory(3, this)"><a href="#">Thriller</a></li>
-<li onclick="selectCategory(4, this)"><a href="#">Romance</a></li>
-<li onclick="selectCategory(5, this)"><a href="#">Fantasy</a></li>
-<li onclick="selectCategory(6, this)"><a href="#">Science Fiction</a></li>
-<li onclick="selectCategory(7, this)"><a href="#">Horror</a></li>
-<li onclick="selectCategory(8, this)"><a href="#">Historical Fiction</a></li>
-<li onclick="selectCategory(9, this)"><a href="#">Biography</a></li>
-<li onclick="selectCategory(10, this)"><a href="#">Autobiography</a></li>
-<li onclick="selectCategory(11, this)"><a href="#">Memoir</a></li>
-<li onclick="selectCategory(12, this)"><a href="#">Poetry</a></li>
-<li onclick="selectCategory(13, this)"><a href="#">Drama</a></li>
-<li onclick="selectCategory(14, this)"><a href="#">Comics & Graphic Novels</a></li>
-<li onclick="selectCategory(15, this)"><a href="#">Manga</a></li>
-<li onclick="selectCategory(16, this)"><a href="#">Children's Books</a></li>
-<li onclick="selectCategory(17, this)"><a href="#">Young Adult</a></li>
-<li onclick="selectCategory(18, this)"><a href="#">Educational</a></li>
-<li onclick="selectCategory(19, this)"><a href="#">Reference</a></li>
-<li onclick="selectCategory(20, this)"><a href="#">Language Learning</a></li>
-<li onclick="selectCategory(21, this)"><a href="#">Religion & Spirituality</a></li>
-<li onclick="selectCategory(22, this)"><a href="#">Philosophy</a></li>
-<li onclick="selectCategory(23, this)"><a href="#">Art & Photography</a></li>
-<li onclick="selectCategory(24, this)"><a href="#">Travel</a></li>
-<li onclick="selectCategory(25, this)"><a href="#">Cookbooks</a></li>
-<li onclick="selectCategory(26, this)"><a href="#">Magazines</a></li>
-
+    <li onclick="selectCategory(0, this)"><a href="{{route('food')}}">Food</a></li>
+    <li onclick="selectCategory(1, this)"><a href="{{route('electronic')}}">Electronic</a></li>
+    <li onclick="selectCategory(2, this)"><a href="{{route('literature')}}">Literature</a></li>
+    <li onclick="selectCategory(3, this)"><a href="{{route('tool')}}">Tool</a></li>
+    <li onclick="selectCategory(4, this)"><a href="{{route('furniture')}}">Furniture</a></li>
+    <li onclick="selectCategory(5, this)"><a href="{{route('beauty-product')}}">Beauty Product</a></li>
+    <li onclick="selectCategory(6, this)"><a href="{{route('health-product')}}">Health Product</a></li>
+    <li onclick="selectCategory(7, this)"><a href="{{route('household')}}">Household</a></li>
 @endpush

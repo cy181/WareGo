@@ -5,36 +5,35 @@
 @endsection
 
 @section('page-content')
+    <div class="item-grid">
+        @foreach ($items as $item)
+            <div class="item">         
+                <img src="{{ asset($item->image_path) }}" alt="{{ $item->name }}" />
+                <div class="item-info">
+                    <h4>{{ $item->name }}</h4>
+                    <p style="position: flex">Price per unit : 
+                        <span style="color:rgb(252, 5, 5)">{{ $item->price }} $</span>
+                    </p>
+
+                    <div class="counter">
+                        <button class="counter-btn" onclick="decrementx5(this)">-5</button>
+                        <button class="counter-btn" onclick="decrement(this)">-1</button>
+                        <span>0</span>
+                        <button class="counter-btn" onclick="increment(this)">+1</button>
+                        <button class="counter-btn" onclick="incrementx5(this)">+5</button>
+                    </div>
+                </div>
+
+                <button class="add-to-cart-btn" onclick="addToCart(this)" 
+                    data-name="{{ $item->name }}" 
+                    data-price="{{ $item->price }}">Add to Cart
+                </button>
+
+            </div>
+        @endforeach
+
+    </div>
 @endsection
 
 @push('sidebar-items')
-
-<li onclick="selectCategory(0, this)"><a href="#">Smartphones</a></li>
-<li onclick="selectCategory(1, this)"><a href="#">Tablets</a></li>
-<li onclick="selectCategory(2, this)"><a href="#">Laptops</a></li>
-<li onclick="selectCategory(3, this)"><a href="#">Desktop Computers</a></li>
-<li onclick="selectCategory(4, this)"><a href="#">Monitors</a></li>
-<li onclick="selectCategory(5, this)"><a href="#">Televisions</a></li>
-<li onclick="selectCategory(6, this)"><a href="#">Audio</a></li>
-<li onclick="selectCategory(7, this)"><a href="#">Cameras</a></li>
-<li onclick="selectCategory(8, this)"><a href="#">Gaming</a></li>
-<li onclick="selectCategory(9, this)"><a href="#">Wearables</a></li>
-<li onclick="selectCategory(10, this)"><a href="#">Smart Home</a></li>
-<li onclick="selectCategory(11, this)"><a href="#">Networking</a></li>
-<li onclick="selectCategory(12, this)"><a href="#">Storage</a></li>
-<li onclick="selectCategory(13, this)"><a href="#">Printers</a></li>
-<li onclick="selectCategory(14, this)"><a href="#">Computer Accessories</a></li>
-<li onclick="selectCategory(15, this)"><a href="#">Phone Accessories</a></li>
-<li onclick="selectCategory(16, this)"><a href="#">Chargers & Cables</a></li>
-<li onclick="selectCategory(17, this)"><a href="#">Power Banks</a></li>
-<li onclick="selectCategory(18, this)"><a href="#">Batteries</a></li>
-<li onclick="selectCategory(19, this)"><a href="#">Kitchen Appliances</a></li>
-<li onclick="selectCategory(20, this)"><a href="#">Home Appliances</a></li>
-<li onclick="selectCategory(21, this)"><a href="#">Personal Care Electronic</a></li>
-<li onclick="selectCategory(22, this)"><a href="#">Office Electronic</a></li>
-<li onclick="selectCategory(23, this)"><a href="#">Security Systems</a></li>
-<li onclick="selectCategory(24, this)"><a href="#">Drones</a></li>
-<li onclick="selectCategory(25, this)"><a href="#">Electronic Components</a></li>
-<li onclick="selectCategory(26, this)"><a href="#">Tools & Equipment</a></li>
-
 @endpush

@@ -19,11 +19,11 @@ Route::get('/search', [CategoryController::class, 'search'])->name('search');
 // CART //
 Route::get('/cart', [CartController::class, 'cart'])->name('cart');
 
-Route::get('/category/food', [CategoryController::class, 'index'])->name('food');
-Route::get('/category/electronic', [CategoryController::class, 'electronic'])->name('electronic');
-Route::get('/category/literature', [CategoryController::class, 'literature'])->name('literature');
-Route::get('/category/tool', [CategoryController::class, 'tool'])->name('tool');
-Route::get('/category/furniture', [CategoryController::class, 'furniture'])->name('furniture');
-Route::get('/category/beauty-product', [CategoryController::class, 'beautyProduct'])->name('beauty-product');
-Route::get('/category/health-product', [CategoryController::class, 'healthProduct'])->name('health-product');
-Route::get('/category/household', [CategoryController::class, 'household'])->name('household');
+Route::get('/food', [CategoryController::class, 'food'])->name('food');
+Route::get('/electronic', [CategoryController::class, 'electronic'])->name('electronic');
+Route::get('/literature', [CategoryController::class, 'literature'])->name('literature');
+Route::get('/tool', [CategoryController::class, 'tool'])->name('tool');
+Route::get('/furniture', [CategoryController::class, 'furniture'])->name('furniture');
+Route::get('/beauty-product', [CategoryController::class, 'beautyProduct'])->name('beauty-product');
+Route::get('/health-product', [CategoryController::class, 'healthProduct'])->name('health-product');
+Route::get('/household', [CategoryController::class, 'household'])->name('household');

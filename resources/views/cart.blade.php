@@ -2,6 +2,11 @@
 
 @section('custom-css')
     <link rel="stylesheet" href="{{ asset('css/cart.css') }}">
+    <style>
+        .cart-bg {
+            background-image: url("{{ asset('images/background.png') }}");
+        }
+    </style>
 @endsection
 
 @section('page-title')
@@ -9,6 +14,8 @@
 @endsection
 
 @section('page-content')
+    <div class="cart-bg"></div>
+
     <div class="cart-page">
 
         <h1 class="cart-heading">Shopping Cart</h1>

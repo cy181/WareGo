@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="{{ asset('images/logo.png') }}" type="image/x-icon" />
     <link href='{{ asset('bootstrap/css/bootstrap.min.css') }}' rel="stylesheet" />
     <link rel="stylesheet" href='{{ asset('css/common.css') }}' />
     <link rel="stylesheet" href='{{ asset('css/category.css') }}' />
@@ -57,10 +57,7 @@
                 </ul>
             </div>
             <ul>
-                <a href="{{ route('cart') }}">CART</a>
-            </ul>
-            <ul>
-                <a href="{{ route('profile') }}">PROFILE</a>
+                <a href="">CART</a>
             </ul>
         </div>
     </nav>
@@ -105,8 +102,8 @@
 
     <button onclick="backToTop()" id="top-btn" class="top-btn" title="Go to top">↑</button>
 
-    <script src='{{ asset('js/common.js') }}'></script>
-    <script src='{{ asset('js/category.js') }}'></script>
+    <script src='{{ asset('js/common.js') }}?v=2'></script>
+    <script src='{{ asset('js/category.js') }}?v=2'></script>
     <script src='{{ asset('bootstrap/js/bootstrap.min.js') }}'></script>
     @yield('custom-js')
 

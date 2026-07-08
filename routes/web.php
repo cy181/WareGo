@@ -15,7 +15,7 @@ Route::view('/home', [HomeController::class, 'index']);
 
 Route::get('/about-us', [AboutController::class, 'about'])->name('about');
 
-Route::view("/profile", 'profile')->name("profile");
+Route::get('/search', [CategoryController::class, 'search'])->name('search');
 
 Route::get('/category/food', [CategoryController::class, 'index'])->name('food');
 Route::get('/category/electronic', [CategoryController::class, 'electronic'])->name('electronic');

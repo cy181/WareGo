@@ -7,16 +7,18 @@ use App\Http\Controllers\CartController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 
-// Route::get('/', function () {
-//     return view('home');
-// });
-
+// HOME //
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::view('/home', [HomeController::class, 'index']);
 
+// ABOUT //
 Route::get('/about-us', [AboutController::class, 'about'])->name('about');
 
-Route::view("/profile", 'profile')->name("profile");
+// SEARCH FUNCTION //
+Route::get('/search', [CategoryController::class, 'search'])->name('search');
+
+// CART //
+Route::get('/cart', [CartController::class, 'cart'])->name('cart');
 
 Route::get('/category/food', [CategoryController::class, 'index'])->name('food');
 Route::get('/category/electronic', [CategoryController::class, 'electronic'])->name('electronic');

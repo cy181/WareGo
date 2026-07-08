@@ -26,7 +26,7 @@
         </div>
 
         <div class="center">
-            <form action="" method="GET" class="search-wrapper">
+            <form action="{{ route('search') }}" method="GET" class="search-wrapper">
                 <input type="text" name="search" id="type-search" class="type-search"
                     placeholder="Type to Search..." value="{{ request('search') }}" autocomplete="off" />
                 <button class="search-btn" type="submit">
@@ -56,7 +56,7 @@
                 </ul>
             </div>
             <ul>
-                <a href="">CART</a>
+                <a href="{{ route('cart') }}">CART</a>
             </ul>
         </div>
     </nav>

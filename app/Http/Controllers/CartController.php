@@ -13,7 +13,7 @@ class CartController extends Controller
         $cartItems = Category::select('id', 'name', 'image_path', 'price', 'category', 'temp_count')->where('temp_count', '>', 1)->get();
 
         foreach ($cartItems as $item) {
-            $item->quantity = $item->count;
+            $item->quantity = $item->temp_count;
         }
 
         // calculate totals

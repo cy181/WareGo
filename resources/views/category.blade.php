@@ -8,7 +8,7 @@
     <div class="item-grid">
 
         @forelse ($items as $item)
-            <div class="item">
+            <div class="item"  data-price="{{ $item->price }}">
                 <img src="{{ asset($item->image_path) }}" alt="{{ $item->name }}" />
                 <div class="item-info">
                     <h4>{{ $item->name }}</h4>
@@ -18,6 +18,12 @@
                             {{ $item->price }} $
                         </span>
                     </p>
+
+                    <p class="total-price">
+                        Total :
+                        <span class="total-value" style="color: rgb(252, 5, 5)">0 $</span>
+                    </p>
+                    
                     <div class="counter">
                         <button class="counter-btn" onclick="decrementx5(this)">-5</button>
                         <button class="counter-btn" onclick="decrement(this)">-1</button>

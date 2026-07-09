@@ -108,7 +108,7 @@
 
     <button onclick="backToTop()" id="top-btn" class="top-btn" title="Go to top">↑</button>
 
-    <script src="{{ asset('js/common.js') }}"></script>
+    <script src='{{asset("js/common.js")}}'></script>
     <script src="{{ asset('bootstrap/js/bootstrap.min.js') }}"></script>
     @yield('custom-js')
 

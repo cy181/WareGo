@@ -7,7 +7,7 @@
     <link rel="shortcut icon" href="{{ asset('images/logo.png') }}" type="image/x-icon" />
     <link href='{{ asset('bootstrap/css/bootstrap.min.css') }}' rel="stylesheet" />
     <link rel="stylesheet" href='{{ asset('css/common.css') }}' />
-    <link rel="stylesheet" href='{{ asset('css/category.css') }}' />
+    <link rel="stylesheet" href='{{ asset('css/category.css') }}?v={{ time() }}' />
     @yield('page-title')
 </head>
 
@@ -61,18 +61,6 @@
             </ul>
         </div>
     </nav>
-
-    <!-- Sorting Menu -->
-    <div>
-        <form action="{{ route('search') }}" method="GET">
-        <select name="sort" onchange="this.form.submit()">
-            <option value="price_asc" {{ request('sort') == 'price_asc' ? 'selected' : '' }}>Price: Low to High</option>
-            <option value="price_desc" {{ request('sort') == 'price_desc' ? 'selected' : '' }}>Price: High to Low</option>
-            <option value="name_asc" {{ request('sort') == 'name_asc' ? 'selected' : '' }}>Name: A-Z</option>
-            <option value="name_desc" {{ request('sort') == 'name_desc' ? 'selected' : '' }}>Name: Z-A</option>
-        </select>
-        </form>
-    </div>
 
     <!-- PAGE CONTENT -->
     <div class="category-wrapper">

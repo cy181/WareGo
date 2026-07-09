@@ -140,8 +140,8 @@
 
     <button onclick="backToTop()" id="top-btn" class="top-btn" title="Go to top">↑</button>
 
-    <script src='{{ asset('js/common.js') }}?v=2'></script>
-    <script src='{{ asset('js/category.js') }}?v=2'></script>
+    <script src='{{ asset('js/common.js') }}?v={{ time() }}'></script>
+    <script src='{{ asset('js/category.js') }}?v={{ time() }}'></script>
     <script src='{{ asset('bootstrap/js/bootstrap.min.js') }}'></script>
     @yield('custom-js')
 

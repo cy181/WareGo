@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="{{ asset('images/logo.png') }}" type="image/x-icon" />
     <link href='{{ asset('bootstrap/css/bootstrap.min.css') }}' rel="stylesheet" />
-    <link rel="stylesheet" href='{{ asset('css/common.css') }}' />
+    <link rel="stylesheet" href='{{ asset('css/common.css') }}?v={{ time() }}' />
     <link rel="stylesheet" href='{{ asset('css/category.css') }}?v={{ time() }}' />
     @yield('page-title')
 </head>
@@ -22,7 +22,7 @@
                 </a>
             </ul>
             <ul>
-                <a href="{{ route('about') }}">ABOUT</a>
+                <a href="{{ route('about') }}" id="about">ABOUT</a>
             </ul>
         </div>
 

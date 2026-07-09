@@ -5,6 +5,7 @@
 @endsection
 
 @section('page-content')
+
     <!-- Sorting Menu -->
     <div id="sort-wrapper">
         <form action="{{ route('search') }}" method="GET">
@@ -16,6 +17,7 @@
         </select>
         </form>
     </div>
+
     <div class="item-grid">
 
         @forelse ($items as $item)

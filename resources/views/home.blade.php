@@ -56,7 +56,7 @@
                 <div class="card">
                     <div class="card-gallery" data-bs-ride="carousel">
                         <div class="card-main">
-                            <img src="{{ asset('images/meat/Meat.png') }}" alt="Meat" />
+                            <img src="{{ asset('images/main/Meat.png') }}" alt="Meat" />
                         </div>
 
                         <div class="card-wrap">
@@ -64,22 +64,22 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="3000">
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/meat/beef.png') }}" alt="Beef" />
+                                            <img src="{{ asset('images/food/beef.png') }}" alt="Beef" />
                                             <span>Beef</span>
                                         </div>
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/meat/chicken.jpg') }}" alt="Chicken" />
+                                            <img src="{{ asset('images/food/chicken.jpg') }}" alt="Chicken" />
                                             <span>Chicken</span>
                                         </div>
                                     </div>
 
                                     <div class="carousel-item" data-bs-interval="3000">
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/meat/mutton.png') }}" alt="Mutton" />
+                                            <img src="{{ asset('images/food/mutton.png') }}" alt="Mutton" />
                                             <span>Mutton</span>
                                         </div>
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/meat/pork.png') }}" alt="Pork" />
+                                            <img src="{{ asset('images/food/pork.png') }}" alt="Pork" />
                                             <span>Pork</span>
                                         </div>
                                     </div>
@@ -110,7 +110,7 @@
                 <div class="card">
                     <div class="card-gallery" data-bs-ride="carousel">
                         <div class="card-main">
-                            <img src="{{ asset('images/dairy/dairy.png') }}" alt="Dairy" />
+                            <img src="{{ asset('images/main/Dairy.png') }}" alt="Dairy" />
                         </div>
 
                         <div class="card-wrap">
@@ -118,22 +118,22 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="3000">
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/dairy/milk.png') }}" alt="Milk" />
+                                            <img src="{{ asset('images/food/milk.png') }}" alt="Milk" />
                                             <span>Milk</span>
                                         </div>
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/dairy/bread.png') }}" alt="Bread" />
+                                            <img src="{{ asset('images/food/bread.png') }}" alt="Bread" />
                                             <span>Bread</span>
                                         </div>
                                     </div>
 
                                     <div class="carousel-item" data-bs-interval="3000">
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/dairy/egg.png') }}" alt="Egg" />
+                                            <img src="{{ asset('images/food/egg.png') }}" alt="Egg" />
                                             <span>Egg</span>
                                         </div>
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/dairy/cheese.jpg') }}" alt="Cheese" />
+                                            <img src="{{ asset('images/food/cheese.jpg') }}" alt="Cheese" />
                                             <span>Cheese</span>
                                         </div>
                                     </div>
@@ -163,7 +163,7 @@
                 <div class="card">
                     <div class="card-gallery" data-bs-ride="carousel">
                         <div class="card-main">
-                            <img src="{{ asset('images/veges/vegetable.png') }}" alt="Meat" />
+                            <img src="{{ asset('images/main/Vegetable.png') }}" alt="Meat" />
                         </div>
 
                         <div class="card-wrap">
@@ -171,22 +171,22 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="3000">
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/veges/califlower.png') }}" alt="Califlower" />
+                                            <img src="{{ asset('images/food/califlower.png') }}" alt="Califlower" />
                                             <span>Califlower</span>
                                         </div>
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/veges/carrot.png') }}" alt="Carrot" />
+                                            <img src="{{ asset('images/food/carrot.png') }}" alt="Carrot" />
                                             <span>Carrot</span>
                                         </div>
                                     </div>
 
                                     <div class="carousel-item" data-bs-interval="3000">
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/veges/onion.png') }}" alt="Onion" />
+                                            <img src="{{ asset('images/food/onion.png') }}" alt="Onion" />
                                             <span>Onion</span>
                                         </div>
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/veges/lettuce.png') }}" alt="Lettuce" />
+                                            <img src="{{ asset('images/food/lettuce.png') }}" alt="Lettuce" />
                                             <span>Lettuce</span>
                                         </div>
                                     </div>
@@ -219,7 +219,7 @@
                 <div class="card">
                     <div class="card-gallery" data-bs-ride="carousel">
                         <div class="card-main">
-                            <img src="{{ asset('images/fruit/fruit.jpg') }}" alt="Fruit" />
+                            <img src="{{ asset('images/main/Fruit.jpg') }}" alt="Fruit" />
                         </div>
 
                         <div class="card-wrap">
@@ -227,22 +227,22 @@
                                 <div class="carousel-inner">
                                     <div class="carousel-item active" data-bs-interval="3000">
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/fruit/berry.jpg') }}" alt="Berry" />
+                                            <img src="{{ asset('images/food/berry.jpg') }}" alt="Berry" />
                                             <span>Berry</span>
                                         </div>
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/fruit/banana.png') }}" alt="Banana" />
+                                            <img src="{{ asset('images/food/banana.png') }}" alt="Banana" />
                                             <span>Banana</span>
                                         </div>
                                     </div>
 
                                     <div class="carousel-item" data-bs-interval="3000">
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/fruit/grape.jpg') }}" alt="Grape" />
+                                            <img src="{{ asset('images/food/grape.jpg') }}" alt="Grape" />
                                             <span>Grape</span>
                                         </div>
                                         <div class="img-wrapper">
-                                            <img src="{{ asset('images/fruit/lemon.jpg') }}" alt="Lettuce" />
+                                            <img src="{{ asset('images/food/lemon.jpg') }}" alt="Lettuce" />
                                             <span>Lemon</span>
                                         </div>
                                     </div>

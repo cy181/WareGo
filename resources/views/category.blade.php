@@ -60,7 +60,6 @@
                 <h3>No products found.</h3>
             </div>
         @endforelse
-
     </div>
 @endsection
 

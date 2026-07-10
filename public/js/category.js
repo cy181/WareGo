@@ -12,7 +12,6 @@ function selectCategory(index, element) {
 }
 
 ///// Counter for increment/decrement ////
-
 function getPrice(button) {
     let item = button.closest(".item");
     let price = parseFloat(item.dataset.price);

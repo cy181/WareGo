@@ -10,10 +10,10 @@ class CartController extends Controller
 {
     public function cart() {
         // dummy values
-        $cartItems = Category::select('id', 'name', 'image_path', 'price', 'category')->get();
+        $cartItems = Category::select('id', 'name', 'image_path', 'price', 'category', 'temp_count')->where('temp_count', '>', 1)->get();
 
         foreach ($cartItems as $item) {
-            $item->quantity = rand(1, 10);
+            $item->quantity = $item->temp_count;
         }
 
         // calculate totals
@@ -23,7 +23,7 @@ class CartController extends Controller
             $subtotal += $item->price * $item->quantity;
         }
 
-        $totalProducts = $cartItems->count();
+        $totalProducts = $cartItems->sum('quantity');
         $shipping = 15;
         $tax = $subtotal * 0.10;
         $total = $subtotal + $shipping + $tax;

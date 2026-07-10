@@ -82,12 +82,12 @@
 
                 <div class="summary-row">
                     <span>Total Products</span>
-                    <span>2</span>
+                    <span>{{ $cartItems->sum('quantity') }}</span>
                 </div>
 
                 <div class="summary-row">
                     <span>Subtotal</span>
-                    <span>$880.00</span>
+                    <span>${{ number_format($cartItems->sum(function ($item) { return $item->price * $item->quantity; }), 2) }}</span>
                 </div>
 
                 <div class="summary-row">
@@ -97,14 +97,14 @@
 
                 <div class="summary-row">
                     <span>Tax (10%)</span>
-                    <span>$88.00</span>
+                    <span>${{ number_format($cartItems->sum(function ($item) { return $item->price * $item->quantity; }) * 0.1, 2) }}</span>
                 </div>
 
                 <hr>
 
                 <div class="summary-row total">
                     <span>Total</span>
-                    <span>$988.00</span>
+                    <span>${{ number_format($cartItems->sum(function ($item) { return $item->price * $item->quantity; }) * 1.1 + 20, 2) }}</span>
                 </div>
 
                 <button class="checkout-btn" onclick="checkout()">

@@ -9,7 +9,6 @@ use App\Models\Category;
 class CartController extends Controller
 {
     public function cart() {
-        // dummy values
         $cartItems = Category::select('id', 'name', 'image_path', 'price', 'category', 'temp_count')->where('temp_count', '>', 1)->get();
 
         foreach ($cartItems as $item) {

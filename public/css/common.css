@@ -94,7 +94,7 @@ nav a:active {
     margin-right: 20px;
 }
 
-/* /////////CATEGORIES////////////// */
+/* /////////CATEGORIES DROPDOWN MENU////////////// */
 .categories-wrapper {
     position: relative;
     display: inline-block;
@@ -123,7 +123,7 @@ nav a:active {
     text-align: left;
 }
 
-/* /////////PAGE SEARCH/////////// */
+/* /////////SEARCH BAR/////////// */
 .search-wrapper {
     display: flex;
     justify-content: center;

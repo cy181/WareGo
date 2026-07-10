@@ -12,7 +12,6 @@
 </head>
 
 <body>
-    <div class="background"></div>
     <!-- NAVIGATION BAR -->
     <nav>
         <div class="left">

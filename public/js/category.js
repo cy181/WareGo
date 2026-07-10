@@ -65,4 +65,6 @@ function decrementx5(button) {
     showTotalPrice(button, count);
 }
 
-function addToCart(button) {}
+function addToCart() {
+    alert("Item added to cart!");
+}

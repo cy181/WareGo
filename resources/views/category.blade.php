@@ -5,16 +5,16 @@
 @endsection
 
 @section('page-content')
-
     <!-- Sorting Menu -->
     <div id="sort-wrapper">
         <form action="{{ route('search') }}" method="GET">
-        <select name="sort" onchange="this.form.submit()">
-            <option value="price_asc" {{ request('sort') == 'price_asc' ? 'selected' : '' }}>Price: Low to High</option>
-            <option value="price_desc" {{ request('sort') == 'price_desc' ? 'selected' : '' }}>Price: High to Low</option>
-            <option value="name_asc" {{ request('sort') == 'name_asc' ? 'selected' : '' }}>Name: A-Z</option>
-            <option value="name_desc" {{ request('sort') == 'name_desc' ? 'selected' : '' }}>Name: Z-A</option>
-        </select>
+            <select name="sort" onchange="this.form.submit()">
+                <option value="price_asc" {{ request('sort') == 'price_asc' ? 'selected' : '' }}>Price: Low to High</option>
+                <option value="price_desc" {{ request('sort') == 'price_desc' ? 'selected' : '' }}>Price: High to Low
+                </option>
+                <option value="name_asc" {{ request('sort') == 'name_asc' ? 'selected' : '' }}>Name: A-Z</option>
+                <option value="name_desc" {{ request('sort') == 'name_desc' ? 'selected' : '' }}>Name: Z-A</option>
+            </select>
         </form>
     </div>
 
@@ -48,7 +48,7 @@
                     </div>
                 </div>
 
-                <button class="add-to-cart-btn" onclick="addToCart(this)" data-name="{{ $item->name }}"
+                <button class="add-to-cart-btn" onclick="addToCart()" data-name="{{ $item->name }}"
                     data-price="{{ $item->price }}">
                     Add to Cart
                 </button>

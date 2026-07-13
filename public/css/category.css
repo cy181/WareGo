@@ -1,8 +1,3 @@
-body {
-    margin: 0;
-    padding: 0;
-}
-
 .category-wrapper {
     display: flex;
     min-height: 100vh;
@@ -78,6 +73,7 @@ body {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .counter-btn:hover {
     background: none;
     color: rgb(171, 199, 79);
@@ -88,7 +84,6 @@ footer {
 }
 
 /*  item-display   */
-
 .item {
     display: flex;
     align-items: center;
@@ -178,7 +173,6 @@ footer {
 }
 
 /* Sorting  */
-
 #sort-wrapper select {
     border: 1px solid #ddd;
     border-radius: 10px;

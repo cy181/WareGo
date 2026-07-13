@@ -12,7 +12,6 @@ function selectCategory(index, element) {
 }
 
 ///// Counter for increment/decrement ////
-
 function getPrice(button) {
     let item = button.closest(".item");
     let price = parseFloat(item.dataset.price);
@@ -65,4 +64,6 @@ function decrementx5(button) {
     showTotalPrice(button, count);
 }
 
-function addToCart(button) {}
+function addToCart() {
+    alert("Item added to cart!");
+}

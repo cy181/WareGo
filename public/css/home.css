@@ -80,7 +80,6 @@
 }
 
 /*overwriting arrows sizes and locations*/
-
 .product-cards .carousel.slide .carousel-control-prev-icon,
 .product-cards .carousel.slide .carousel-control-next-icon {
     padding: 10px;
@@ -94,7 +93,6 @@
 }
 
 /*cards*/
-
 .card {
     box-shadow:
         0 4px 8px 0 rgba(255, 255, 255, 0.2),
@@ -171,7 +169,6 @@
 }
 
 /*images inside cards*/
-
 .img-wrapper {
     position: relative;
     width: 50%;

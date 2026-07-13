@@ -26,8 +26,7 @@
   align-items: flex-start;
 }
 
-/* LEFT */
-
+/* LEFT SIDE */
 .cart-items {
   flex: 3;
 }
@@ -89,8 +88,7 @@
 }
 
 
-/* RIGHT */
-
+/* RIGHT SIDE */
 .cart-summary {
   flex: 1;
   background-color: white;

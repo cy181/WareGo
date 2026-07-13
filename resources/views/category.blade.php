@@ -64,5 +64,5 @@
     </div>
 @endsection
 
-@push('sidebar-items')
-@endpush
+{{-- @push('sidebar-items')
+@endpush --}}

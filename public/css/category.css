@@ -64,6 +64,7 @@
 
 .counter-btn {
     background: none;
+    border: none;
     color: rgb(255, 0, 0);
     font-weight: 1000;
     width: 20px;

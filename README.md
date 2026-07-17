@@ -1,18 +1,36 @@
-## WareGo
+<img src="public/images/logo.png" alt="Logo" width="80px">
 
-A modern B2B e-commerce web app built with Laravel, PHP, Blade, MySQL
+---
+A modern B2B e-commerce prototype web app built with Laravel, PHP, Blade, MySQL
 
 ## Overview
 
-WareGo is a full-stack web application for supermarket inventory restocking.
-
-This project was developed to practice full-stack web development using Laravel while applying software engineering principles such as MVC architecture, database design, and responsive UI development.
+WareGo is an e-commerce website designed for supermarket owners for easy inventory restocking.
+The website provides a simple interface for browsing products by their respective categories, searching for products, managing a shopping cart, and sorting products.
+The purpose of WareGo is to help supermarket owners quickly locate products, view the pricing, and prepare their shipment order through a user friendly web interface.
 
 ## Motivation
-We found inspiration from our real life experiences. We were playing a
-supermarket simulator game and we found the inventory management/product restock feature to be pretty cool.
 
-We thought it would be a somewhat realistic project to try and apply what we learned during the summer semester
+We found inspiration from our real life experiences. We were playing a
+supermarket simulator game and we found the inventory management/product restock feature to be pretty cool!
+
+We thought it would be a somewhat realistic project to try and apply what we learned during the summer semester!
+
+## Tech Stack
+
+- Laravel
+- PHP
+- Blade
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+- MySQL
+
+## Screenshots
+<img src="public/images/screenshots/Home_page.png" alt="Home_page" width="500px">
+<img src="public/images/screenshots/Category_page_1.png" alt="Product_page" width="500px">
+<img src="public/images/screenshots/Cart_page_2.png" alt="Cart_page" width="500px">
 
 ## Setup Guide
 
